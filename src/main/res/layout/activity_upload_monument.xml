@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE6E6"
+    tools:context=".UploadMonumentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heritage Lens"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#4D0E0C"
+            android:textColor="#F4F0F0" />
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload a New monument"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#430B0A"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/etMonumentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name of the monument"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg" />
+        <!-- Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Enter the description of the monument"
+            android:gravity="top"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginTop="8dp" />
+
+        <!-- Image Upload -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Picture (Slider Images)"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_photo_camera_24"
+                android:padding="10dp"
+                android:background="@drawable/image_placeholder_bg"
+                android:scaleType="centerInside"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_photo_camera_24"
+                android:padding="10dp"
+                android:background="@drawable/image_placeholder_bg"
+                android:scaleType="centerInside"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_photo_camera_24"
+                android:padding="10dp"
+                android:background="@drawable/image_placeholder_bg"
+                android:scaleType="centerInside"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/etLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnMarkLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Location"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3A0A09"
+            android:textColor="#FFF" />
+
+        <!-- Contact Info -->
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your mobile number"
+            android:inputType="phone"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your address"
+            android:layout_marginTop="8dp" />
+
+        <!-- Terms -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/condition"
+            android:layout_marginTop="12dp" />
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#430C0B"
+            android:textColor="#FFF" />
+
+        <!-- Disclaimer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disclaimer: All monument locations and boundaries are indicative and for representation purposes only. They cannot be interpreted as legal boundaries or protected areas\"
+        android:textSize="12sp"
+        android:textColor="#3A0706"
+        android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
